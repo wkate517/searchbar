@@ -25,7 +25,8 @@ SearchBAR is a student-centered website that helps college students discover nea
 
 ## Running the Project Locally
 
-Install the project dependencies:
-
 ```bash
+git clone https://github.com/wkate517/searchbar.git
+cd searchbar
 npm install
+npm run dev
