@@ -1,4 +1,4 @@
-# SearchBAR
+# searchBAR
 
 SearchBAR is a student-centered website that helps college students discover nearby bars and nightlife spots. 
 
