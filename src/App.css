@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Oswald:wght@600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #f6a36b;
+  background-image:
+    url("/skyline.png"),
+    linear-gradient(to bottom, #f58f72, #f7c27e 55%, #302347);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center;
+  background-size: min(1200px, 100%) auto, cover;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.brand {
+  width: 84%;
+  margin: 0 auto 38px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 22px;
+  background: rgba(20, 20, 30, 0.42);
+  backdrop-filter: blur(8px);
+}
+
+.brand h1 {
+  margin: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand p {
+  margin: 14px 0 0;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.filters {
+  padding: 18px 28px;
+  border-radius: 18px;
+  background: rgba(25, 25, 35, 0.48);
+  backdrop-filter: blur(8px);
+}
+
+.filters h2 {
+  margin: 0 0 20px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.filter-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 16px 10px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0;
+  background: transparent;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.option-list {
+  margin-bottom: 12px;
+  padding: 5px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.filter-option {
+  width: 100%;
+  display: block;
+  padding: 9px 6px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #25232a;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.search-row button:hover,
+.details-button:hover {
+  background: #4b4655;
+}
+
+.results {
+  width: min(820px, 100%);
+  margin-left: auto;
+}
+
+.search-row {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.search-row input {
+  width: 100%;
+  padding: 17px 110px 17px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search-row input:focus {
+  border-color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.search-row button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #25232a;
+  color: white;
+  cursor: pointer;
+}
+
+.active-filters {
+  margin: 0 0 15px;
+  color: white;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.bar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.bar-card {
+  padding: 12px;
+  border-radius: 16px;
+  text-align: center;
+  color: #222;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bar-image {
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #b978d1;
+  color: #222;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+}
+
+.bar-card h2 {
+  margin: 13px 0 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.bar-card p {
+  margin: 7px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.bar-card strong {
+  font-weight: 700;
+}
+
+.details-button {
+  margin-top: 8px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #25232a;
+  color: white;
+  cursor: pointer;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  padding: 30px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .workspace {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .filters {
+    padding: 18px 15px;
+  }
+
+  .filter-button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filters h2 {
+    width: 100%;
+  }
+
+  .filter-button {
+    flex: 1;
+    min-width: 130px;
+  }
+
+  .option-list {
+    width: 100%;
+  }
+
+  .bar-grid {
+    grid-template-columns: 1fr;
+  }
+}
